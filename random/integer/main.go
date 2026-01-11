@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-random.integer.Integer",
+		"@cdktn/provider-random.integer.Integer",
 		reflect.TypeOf((*Integer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -75,7 +75,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-random.integer.IntegerConfig",
+		"@cdktn/provider-random.integer.IntegerConfig",
 		reflect.TypeOf((*IntegerConfig)(nil)).Elem(),
 	)
 }

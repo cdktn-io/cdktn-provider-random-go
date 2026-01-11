@@ -5,10 +5,10 @@ package password
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-random-go/random/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-random-go/random/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-random-go/random/v12/password/internal"
+	"github.com/cdktn-io/cdktn-provider-random-go/random/v12/password/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -616,7 +616,7 @@ func NewPassword(scope constructs.Construct, id *string, config *PasswordConfig)
 	j := jsiiProxy_Password{}
 
 	_jsii_.Create(
-		"@cdktf/provider-random.password.Password",
+		"@cdktn/provider-random.password.Password",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -629,7 +629,7 @@ func NewPassword_Override(p Password, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-random.password.Password",
+		"@cdktn/provider-random.password.Password",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -845,7 +845,7 @@ func Password_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.password.Password",
+		"@cdktn/provider-random.password.Password",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -880,7 +880,7 @@ func Password_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.password.Password",
+		"@cdktn/provider-random.password.Password",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -899,7 +899,7 @@ func Password_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.password.Password",
+		"@cdktn/provider-random.password.Password",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -918,7 +918,7 @@ func Password_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.password.Password",
+		"@cdktn/provider-random.password.Password",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -931,7 +931,7 @@ func Password_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-random.password.Password",
+		"@cdktn/provider-random.password.Password",
 		"tfResourceType",
 		&returns,
 	)

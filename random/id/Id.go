@@ -5,10 +5,10 @@ package id
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-random-go/random/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-random-go/random/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-random-go/random/v12/id/internal"
+	"github.com/cdktn-io/cdktn-provider-random-go/random/v12/id/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -422,7 +422,7 @@ func NewId(scope constructs.Construct, id *string, config *IdConfig) Id {
 	j := jsiiProxy_Id{}
 
 	_jsii_.Create(
-		"@cdktf/provider-random.id.Id",
+		"@cdktn/provider-random.id.Id",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -435,7 +435,7 @@ func NewId_Override(i Id, scope constructs.Construct, id *string, config *IdConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-random.id.Id",
+		"@cdktn/provider-random.id.Id",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -552,7 +552,7 @@ func Id_GenerateConfigForImport(scope constructs.Construct, importToId *string, 
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.id.Id",
+		"@cdktn/provider-random.id.Id",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -587,7 +587,7 @@ func Id_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.id.Id",
+		"@cdktn/provider-random.id.Id",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func Id_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.id.Id",
+		"@cdktn/provider-random.id.Id",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -625,7 +625,7 @@ func Id_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.id.Id",
+		"@cdktn/provider-random.id.Id",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +638,7 @@ func Id_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-random.id.Id",
+		"@cdktn/provider-random.id.Id",
 		"tfResourceType",
 		&returns,
 	)

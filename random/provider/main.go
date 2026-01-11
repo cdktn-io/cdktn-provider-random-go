@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-random.provider.RandomProvider",
+		"@cdktn/provider-random.provider.RandomProvider",
 		reflect.TypeOf((*RandomProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -44,7 +44,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-random.provider.RandomProviderConfig",
+		"@cdktn/provider-random.provider.RandomProviderConfig",
 		reflect.TypeOf((*RandomProviderConfig)(nil)).Elem(),
 	)
 }

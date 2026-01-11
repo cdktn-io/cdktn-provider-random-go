@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-random.password.Password",
+		"@cdktn/provider-random.password.Password",
 		reflect.TypeOf((*Password)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-random.password.PasswordConfig",
+		"@cdktn/provider-random.password.PasswordConfig",
 		reflect.TypeOf((*PasswordConfig)(nil)).Elem(),
 	)
 }

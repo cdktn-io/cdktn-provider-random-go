@@ -5,10 +5,10 @@ package uuid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-random-go/random/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-random-go/random/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-random-go/random/v12/uuid/internal"
+	"github.com/cdktn-io/cdktn-provider-random-go/random/v12/uuid/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -342,7 +342,7 @@ func NewUuid(scope constructs.Construct, id *string, config *UuidConfig) Uuid {
 	j := jsiiProxy_Uuid{}
 
 	_jsii_.Create(
-		"@cdktf/provider-random.uuid.Uuid",
+		"@cdktn/provider-random.uuid.Uuid",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewUuid_Override(u Uuid, scope constructs.Construct, id *string, config *Uu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-random.uuid.Uuid",
+		"@cdktn/provider-random.uuid.Uuid",
 		[]interface{}{scope, id, config},
 		u,
 	)
@@ -450,7 +450,7 @@ func Uuid_GenerateConfigForImport(scope constructs.Construct, importToId *string
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.uuid.Uuid",
+		"@cdktn/provider-random.uuid.Uuid",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -485,7 +485,7 @@ func Uuid_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.uuid.Uuid",
+		"@cdktn/provider-random.uuid.Uuid",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func Uuid_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.uuid.Uuid",
+		"@cdktn/provider-random.uuid.Uuid",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func Uuid_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.uuid.Uuid",
+		"@cdktn/provider-random.uuid.Uuid",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func Uuid_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-random.uuid.Uuid",
+		"@cdktn/provider-random.uuid.Uuid",
 		"tfResourceType",
 		&returns,
 	)

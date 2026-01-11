@@ -5,10 +5,10 @@ package shuffle
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-random-go/random/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-random-go/random/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-random-go/random/v12/shuffle/internal"
+	"github.com/cdktn-io/cdktn-provider-random-go/random/v12/shuffle/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -413,7 +413,7 @@ func NewShuffle(scope constructs.Construct, id *string, config *ShuffleConfig) S
 	j := jsiiProxy_Shuffle{}
 
 	_jsii_.Create(
-		"@cdktf/provider-random.shuffle.Shuffle",
+		"@cdktn/provider-random.shuffle.Shuffle",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewShuffle_Override(s Shuffle, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-random.shuffle.Shuffle",
+		"@cdktn/provider-random.shuffle.Shuffle",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -554,7 +554,7 @@ func Shuffle_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.shuffle.Shuffle",
+		"@cdktn/provider-random.shuffle.Shuffle",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -589,7 +589,7 @@ func Shuffle_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.shuffle.Shuffle",
+		"@cdktn/provider-random.shuffle.Shuffle",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func Shuffle_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.shuffle.Shuffle",
+		"@cdktn/provider-random.shuffle.Shuffle",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -627,7 +627,7 @@ func Shuffle_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-random.shuffle.Shuffle",
+		"@cdktn/provider-random.shuffle.Shuffle",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func Shuffle_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-random.shuffle.Shuffle",
+		"@cdktn/provider-random.shuffle.Shuffle",
 		"tfResourceType",
 		&returns,
 	)
