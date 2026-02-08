@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package stringresource
@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/string random_string}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/string random_string}.
 type StringResource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -595,7 +595,7 @@ func (j *jsiiProxy_StringResource) UpperInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/string random_string} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/string random_string} Resource.
 func NewStringResource(scope constructs.Construct, id *string, config *StringResourceConfig) StringResource {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewStringResource(scope constructs.Construct, id *string, config *StringRes
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/string random_string} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/string random_string} Resource.
 func NewStringResource_Override(s StringResource, scope constructs.Construct, id *string, config *StringResourceConfig) {
 	_init_.Initialize()
 

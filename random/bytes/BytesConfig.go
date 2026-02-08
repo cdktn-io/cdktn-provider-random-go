@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package bytes
@@ -24,13 +24,13 @@ type BytesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The number of bytes requested. The minimum value for length is 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/bytes#length Bytes#length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/bytes#length Bytes#length}
 	Length *float64 `field:"required" json:"length" yaml:"length"`
 	// Arbitrary map of values that, when changed, will trigger recreation of resource.
 	//
 	// See [the main provider documentation](../index.html) for more information.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/bytes#keepers Bytes#keepers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/bytes#keepers Bytes#keepers}
 	Keepers *map[string]*string `field:"optional" json:"keepers" yaml:"keepers"`
 }
 

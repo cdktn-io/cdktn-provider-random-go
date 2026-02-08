@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs random}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs random}.
 type RandomProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -186,7 +186,7 @@ func (j *jsiiProxy_RandomProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs random} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs random} Resource.
 func NewRandomProvider(scope constructs.Construct, id *string, config *RandomProviderConfig) RandomProvider {
 	_init_.Initialize()
 
@@ -204,7 +204,7 @@ func NewRandomProvider(scope constructs.Construct, id *string, config *RandomPro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs random} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs random} Resource.
 func NewRandomProvider_Override(r RandomProvider, scope constructs.Construct, id *string, config *RandomProviderConfig) {
 	_init_.Initialize()
 

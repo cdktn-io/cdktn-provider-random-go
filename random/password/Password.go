@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package password
@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/password random_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/password random_password}.
 type Password interface {
 	cdktf.TerraformResource
 	BcryptHash() *string
@@ -606,7 +606,7 @@ func (j *jsiiProxy_Password) UpperInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/password random_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/password random_password} Resource.
 func NewPassword(scope constructs.Construct, id *string, config *PasswordConfig) Password {
 	_init_.Initialize()
 
@@ -624,7 +624,7 @@ func NewPassword(scope constructs.Construct, id *string, config *PasswordConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/password random_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/password random_password} Resource.
 func NewPassword_Override(p Password, scope constructs.Construct, id *string, config *PasswordConfig) {
 	_init_.Initialize()
 

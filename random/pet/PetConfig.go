@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package pet
@@ -26,19 +26,19 @@ type PetConfig struct {
 	//
 	// See [the main provider documentation](../index.html) for more information.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/pet#keepers Pet#keepers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/pet#keepers Pet#keepers}
 	Keepers *map[string]*string `field:"optional" json:"keepers" yaml:"keepers"`
 	// The length (in words) of the pet name. Defaults to 2.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/pet#length Pet#length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/pet#length Pet#length}
 	Length *float64 `field:"optional" json:"length" yaml:"length"`
 	// A string to prefix the name with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/pet#prefix Pet#prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/pet#prefix Pet#prefix}
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
 	// The character to separate words in the pet name. Defaults to "-".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs/resources/pet#separator Pet#separator}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/pet#separator Pet#separator}
 	Separator *string `field:"optional" json:"separator" yaml:"separator"`
 }
 

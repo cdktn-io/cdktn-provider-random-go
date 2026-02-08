@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
@@ -7,7 +7,7 @@ package provider
 type RandomProviderConfig struct {
 	// Alias name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs#alias RandomProvider#alias}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs#alias RandomProvider#alias}
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
 }
 

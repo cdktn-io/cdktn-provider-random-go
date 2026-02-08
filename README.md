@@ -1,6 +1,6 @@
-# CDKTF Go bindings for hashicorp/random provider version 3.7.2
+# CDKTF Go bindings for hashicorp/random provider version 3.8.1
 
-This repo builds and publishes the [Terraform random provider](https://registry.terraform.io/providers/hashicorp/random/3.7.2/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform random provider](https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
@@ -23,7 +23,7 @@ This project is explicitly not tracking the Terraform random provider version 1:
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf) - Last official release
-* [Terraform random provider](https://registry.terraform.io/providers/hashicorp/random/3.7.2)
+* [Terraform random provider](https://registry.terraform.io/providers/hashicorp/random/3.8.1)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
