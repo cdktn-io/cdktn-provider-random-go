@@ -5,18 +5,18 @@ package uuid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-random-go/random/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-random-go/random/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-random-go/random/v12/uuid/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-random-go/random/v13/uuid/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/uuid random_uuid}.
 type Uuid interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -32,9 +32,9 @@ type Uuid interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -44,15 +44,15 @@ type Uuid interface {
 	SetKeepers(val *map[string]*string)
 	KeepersInput() *map[string]*string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -61,7 +61,7 @@ type Uuid interface {
 	RawOverrides() interface{}
 	Result() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -74,7 +74,7 @@ type Uuid interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -92,9 +92,9 @@ type Uuid interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -128,11 +128,11 @@ type Uuid interface {
 
 // The jsii proxy struct for Uuid
 type jsiiProxy_Uuid struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
-func (j *jsiiProxy_Uuid) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Uuid) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_Uuid) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Uuid) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Uuid) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_Uuid) KeepersInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Uuid) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Uuid) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_Uuid) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Uuid) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Uuid) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_Uuid) Result() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Uuid) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Uuid) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_Uuid)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Uuid)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Uuid)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -410,7 +410,7 @@ func (j *jsiiProxy_Uuid)SetKeepers(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Uuid)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Uuid)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_Uuid)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Uuid)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Uuid)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -440,14 +440,14 @@ func (j *jsiiProxy_Uuid)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a Uuid resource upon running "cdktf plan <stack-name>".
-func Uuid_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Uuid resource upon running "cdktn plan <stack-name>".
+func Uuid_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateUuid_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
 		"@cdktn/provider-random.uuid.Uuid",
@@ -581,11 +581,11 @@ func (u *jsiiProxy_Uuid) GetAnyMapAttribute(terraformAttribute *string) *map[str
 	return returns
 }
 
-func (u *jsiiProxy_Uuid) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_Uuid) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,
@@ -722,7 +722,7 @@ func (u *jsiiProxy_Uuid) HasResourceMove() interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_Uuid) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (u *jsiiProxy_Uuid) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := u.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -733,11 +733,11 @@ func (u *jsiiProxy_Uuid) ImportFrom(id *string, provider cdktf.TerraformProvider
 	)
 }
 
-func (u *jsiiProxy_Uuid) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (u *jsiiProxy_Uuid) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		u,

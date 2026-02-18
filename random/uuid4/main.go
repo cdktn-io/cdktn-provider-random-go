@@ -63,7 +63,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Uuid4{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)

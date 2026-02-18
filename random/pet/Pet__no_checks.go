@@ -107,7 +107,7 @@ func (j *jsiiProxy_Pet) validateSetLengthParameters(val *float64) error {
 	return nil
 }
 
-func (j *jsiiProxy_Pet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Pet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

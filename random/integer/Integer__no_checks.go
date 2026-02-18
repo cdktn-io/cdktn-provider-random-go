@@ -103,7 +103,7 @@ func (j *jsiiProxy_Integer) validateSetKeepersParameters(val *map[string]*string
 	return nil
 }
 
-func (j *jsiiProxy_Integer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Integer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 
