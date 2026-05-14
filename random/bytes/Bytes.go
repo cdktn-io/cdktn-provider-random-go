@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/bytes random_bytes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/bytes random_bytes}.
 type Bytes interface {
 	cdktn.TerraformResource
 	Base64() *string
@@ -364,7 +364,7 @@ func (j *jsiiProxy_Bytes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/bytes random_bytes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/bytes random_bytes} Resource.
 func NewBytes(scope constructs.Construct, id *string, config *BytesConfig) Bytes {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewBytes(scope constructs.Construct, id *string, config *BytesConfig) Bytes
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/bytes random_bytes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/bytes random_bytes} Resource.
 func NewBytes_Override(b Bytes, scope constructs.Construct, id *string, config *BytesConfig) {
 	_init_.Initialize()
 

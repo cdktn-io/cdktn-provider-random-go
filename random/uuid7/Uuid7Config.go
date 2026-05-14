@@ -26,7 +26,7 @@ type Uuid7Config struct {
 	//
 	// See [the main provider documentation](../index.html) for more information.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/uuid7#keepers Uuid7#keepers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/uuid7#keepers Uuid7#keepers}
 	Keepers *map[string]*string `field:"optional" json:"keepers" yaml:"keepers"`
 }
 

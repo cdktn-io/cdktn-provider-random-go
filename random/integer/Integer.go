@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/integer random_integer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/integer random_integer}.
 type Integer interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -411,7 +411,7 @@ func (j *jsiiProxy_Integer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/integer random_integer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/integer random_integer} Resource.
 func NewInteger(scope constructs.Construct, id *string, config *IntegerConfig) Integer {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewInteger(scope constructs.Construct, id *string, config *IntegerConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/integer random_integer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/integer random_integer} Resource.
 func NewInteger_Override(i Integer, scope constructs.Construct, id *string, config *IntegerConfig) {
 	_init_.Initialize()
 

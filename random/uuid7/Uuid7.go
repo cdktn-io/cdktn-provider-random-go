@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/uuid7 random_uuid7}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/uuid7 random_uuid7}.
 type Uuid7 interface {
 	cdktn.TerraformResource
 	// Experimental.
@@ -341,7 +341,7 @@ func (j *jsiiProxy_Uuid7) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/uuid7 random_uuid7} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/uuid7 random_uuid7} Resource.
 func NewUuid7(scope constructs.Construct, id *string, config *Uuid7Config) Uuid7 {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewUuid7(scope constructs.Construct, id *string, config *Uuid7Config) Uuid7
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/uuid7 random_uuid7} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/uuid7 random_uuid7} Resource.
 func NewUuid7_Override(u Uuid7, scope constructs.Construct, id *string, config *Uuid7Config) {
 	_init_.Initialize()
 

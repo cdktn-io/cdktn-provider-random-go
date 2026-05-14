@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/id random_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/id random_id}.
 type Id interface {
 	cdktn.TerraformResource
 	B64Std() *string
@@ -421,7 +421,7 @@ func (j *jsiiProxy_Id) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/id random_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/id random_id} Resource.
 func NewId(scope constructs.Construct, id *string, config *IdConfig) Id {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewId(scope constructs.Construct, id *string, config *IdConfig) Id {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/id random_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/id random_id} Resource.
 func NewId_Override(i Id, scope constructs.Construct, id *string, config *IdConfig) {
 	_init_.Initialize()
 

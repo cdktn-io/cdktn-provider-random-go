@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/password random_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/password random_password}.
 type Password interface {
 	cdktn.TerraformResource
 	BcryptHash() *string
@@ -615,7 +615,7 @@ func (j *jsiiProxy_Password) UpperInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/password random_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/password random_password} Resource.
 func NewPassword(scope constructs.Construct, id *string, config *PasswordConfig) Password {
 	_init_.Initialize()
 
@@ -633,7 +633,7 @@ func NewPassword(scope constructs.Construct, id *string, config *PasswordConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.8.1/docs/resources/password random_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/random/3.9.0/docs/resources/password random_password} Resource.
 func NewPassword_Override(p Password, scope constructs.Construct, id *string, config *PasswordConfig) {
 	_init_.Initialize()
 
