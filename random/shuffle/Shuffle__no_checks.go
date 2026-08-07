@@ -59,6 +59,10 @@ func (s *jsiiProxy_Shuffle) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (s *jsiiProxy_Shuffle) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Shuffle) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (s *jsiiProxy_Shuffle) validateMoveToIdParameters(id *string) error {
 }
 
 func (s *jsiiProxy_Shuffle) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Shuffle) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 

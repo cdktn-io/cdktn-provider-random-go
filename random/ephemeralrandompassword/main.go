@@ -1,7 +1,7 @@
 // Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
-package shuffle
+package ephemeralrandompassword
 
 import (
 	"reflect"
@@ -11,13 +11,12 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktn/provider-random.shuffle.Shuffle",
-		reflect.TypeOf((*Shuffle)(nil)).Elem(),
+		"@cdktn/provider-random.ephemeralRandomPassword.EphemeralRandomPassword",
+		reflect.TypeOf((*EphemeralRandomPassword)(nil)).Elem(),
 		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "bcryptHash", GoGetter: "BcryptHash"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
-			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -33,34 +32,42 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
-			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
-			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
-			_jsii_.MemberProperty{JsiiProperty: "input", GoGetter: "Input"},
-			_jsii_.MemberProperty{JsiiProperty: "inputInput", GoGetter: "InputInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "keepers", GoGetter: "Keepers"},
-			_jsii_.MemberProperty{JsiiProperty: "keepersInput", GoGetter: "KeepersInput"},
+			_jsii_.MemberProperty{JsiiProperty: "length", GoGetter: "Length"},
+			_jsii_.MemberProperty{JsiiProperty: "lengthInput", GoGetter: "LengthInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
-			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
-			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
-			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
+			_jsii_.MemberProperty{JsiiProperty: "lower", GoGetter: "Lower"},
+			_jsii_.MemberProperty{JsiiProperty: "lowerInput", GoGetter: "LowerInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minLower", GoGetter: "MinLower"},
+			_jsii_.MemberProperty{JsiiProperty: "minLowerInput", GoGetter: "MinLowerInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minNumeric", GoGetter: "MinNumeric"},
+			_jsii_.MemberProperty{JsiiProperty: "minNumericInput", GoGetter: "MinNumericInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minSpecial", GoGetter: "MinSpecial"},
+			_jsii_.MemberProperty{JsiiProperty: "minSpecialInput", GoGetter: "MinSpecialInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minUpper", GoGetter: "MinUpper"},
+			_jsii_.MemberProperty{JsiiProperty: "minUpperInput", GoGetter: "MinUpperInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "numeric", GoGetter: "Numeric"},
+			_jsii_.MemberProperty{JsiiProperty: "numericInput", GoGetter: "NumericInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "overrideSpecial", GoGetter: "OverrideSpecial"},
+			_jsii_.MemberProperty{JsiiProperty: "overrideSpecialInput", GoGetter: "OverrideSpecialInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetKeepers", GoMethod: "ResetKeepers"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLower", GoMethod: "ResetLower"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinLower", GoMethod: "ResetMinLower"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinNumeric", GoMethod: "ResetMinNumeric"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinSpecial", GoMethod: "ResetMinSpecial"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinUpper", GoMethod: "ResetMinUpper"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNumeric", GoMethod: "ResetNumeric"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetResultCount", GoMethod: "ResetResultCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSeed", GoMethod: "ResetSeed"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOverrideSpecial", GoMethod: "ResetOverrideSpecial"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSpecial", GoMethod: "ResetSpecial"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUpper", GoMethod: "ResetUpper"},
 			_jsii_.MemberProperty{JsiiProperty: "result", GoGetter: "Result"},
-			_jsii_.MemberProperty{JsiiProperty: "resultCount", GoGetter: "ResultCount"},
-			_jsii_.MemberProperty{JsiiProperty: "resultCountInput", GoGetter: "ResultCountInput"},
-			_jsii_.MemberProperty{JsiiProperty: "seed", GoGetter: "Seed"},
-			_jsii_.MemberProperty{JsiiProperty: "seedInput", GoGetter: "SeedInput"},
+			_jsii_.MemberProperty{JsiiProperty: "special", GoGetter: "Special"},
+			_jsii_.MemberProperty{JsiiProperty: "specialInput", GoGetter: "SpecialInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -70,16 +77,18 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "upper", GoGetter: "Upper"},
+			_jsii_.MemberProperty{JsiiProperty: "upperInput", GoGetter: "UpperInput"},
 			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Shuffle{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
+			j := jsiiProxy_EphemeralRandomPassword{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformEphemeralResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktn/provider-random.shuffle.ShuffleConfig",
-		reflect.TypeOf((*ShuffleConfig)(nil)).Elem(),
+		"@cdktn/provider-random.ephemeralRandomPassword.EphemeralRandomPasswordConfig",
+		reflect.TypeOf((*EphemeralRandomPasswordConfig)(nil)).Elem(),
 	)
 }

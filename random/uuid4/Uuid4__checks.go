@@ -122,6 +122,14 @@ func (u *jsiiProxy_Uuid4) validateInterpolationForAttributeParameters(terraformA
 	return nil
 }
 
+func (u *jsiiProxy_Uuid4) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (u *jsiiProxy_Uuid4) validateMoveFromIdParameters(id *string) error {
 	if id == nil {
 		return fmt.Errorf("parameter id is required, but nil was provided")
@@ -202,6 +210,14 @@ func (u *jsiiProxy_Uuid4) validateMoveToIdParameters(id *string) error {
 func (u *jsiiProxy_Uuid4) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (u *jsiiProxy_Uuid4) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil
